@@ -3,126 +3,161 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <title>Primordial Chaos</title>
+    <title>Ioan Butiu</title>
   </head>
   <body>
-    <!--<div id="index" class="container">
-      <p>This is the site index</p>
-    </div>-->
-    <div id="nav-bar" class="">
-      <div><p><b><a href="index.html">Primordial Chaos</a></b></p></div>
-      <div id="nav-bar-links"><p><a>Artists</a><a>Mediums</a><a>Movements</a><a>Info</a></p></div>
+    <div id="nav-bar"><a>IOAN BUTIU</a><div id="nav-bar-links"><a class="nav-links">EMAIL</a><a class="nav-links">INFO</a></div></div>
+    <div id="page-title">
+      <!-- A root element for TypeIt to target. -->
+      <span id="myElement"></span>
+      <!-- The script itself, loaded AFTER your root element. -->
+      <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+      <script>
+        new TypeIt("#myElement", {
+          //strings: "MULTIDISCIPLINARY DESIGNER", "BASED IN NEW YORK CITY", "CURRENTLY @ TEAM", "SELECTED WORK",
+          speed: 60,
+          deleteSpeed: 40,
+          cursor: false,
+          waitUntilVisible: false,
+          html: true,
+          lifeLike: true,
+          loop: true
+        })
+          .type('MULTIDISCIPLINARY DESIGNER', {delay: 2000})
+          .delete(null, {delay: 500})
+          .type('BASED IN NEW YORK CITY', {delay: 2000})
+          .delete(null, {delay: 500})
+          .type('CURRENTLY @ TEAM', {delay: 2000})
+          .delete(null, {delay: 500})
+          .type('AVAILABLE FOR FREELANCE WORK', {delay: 2000})
+          .delete(null, {delay: 500})
+          //.type('SELECTED WORK <span class="material-icons md-56">south</span>', {delay: 4000})
+          //.delete(null, {delay: 500})
+          .go();
+      </script>
     </div>
-    <div id="content" class="">
-      <div id="title-container">
-        <div id="title">
-          <h1>Hilma af Klint</h1><br><h2>Swedish Abstract Painter and Mystic (1862–1944)</h2>
+    <div id="project-list-heading-container">
+      <div id="project-filters-container">
+        <span><small>SELECTED WORK</small> <span class="material-icons md-12">south</span></span>
+        <div>
+          <div id="filter-links-view">
+            <a class="filter-links" style="text-decoration: underline;"><small>LIST</small></a>
+            <a class="filter-links"><small>GRID</small></a>
+          </div>
+          <a class="filter-button" id="view-button">VIEW</a>
+          <div id="filter-links-projects">
+            <a class="filter-links" style="text-decoration: underline;"><small>ALL</small></a>
+            <a class="filter-links"><small>VISUAL</small></a>
+            <a class="filter-links"><small>UI/UX</small></a>
+            <a class="filter-links"><small>RESEARCH</small></a>
+            <a class="filter-links"><small>SPECULATIVE</small></a>
+          </div>
+          <a class="filter-button" id="projects-button">FILTER</a>
         </div>
       </div>
-      <div id="main-content">
-        <div class="image-caption-container">
-          <div class="image-container">
-            <img src="images/803px-Hilma_af_Klint_-_1907_-_De_tio_största_-_nr_3_Ynglingaåldern_Ur_Grupp_4.jpg">
-          </div>
-          <div class="image-caption">
-            <p><i>De tio största, nr 3. Ynglingaåldern. Ur Grupp 4.</i><br>Hilma af Klint, 1907<br>Courtesy Stiftelsen Hilma af Klints Verk.<br>Photo: Albin Dahlström/ Moderna Museet.<p>
-          </div>
-
-          <div class="image-container">
-            <img src="images/Hilma_af_Klint_-_1907_-_The_Ten_Biggest_-_No_7.jpg">
-          </div>
-          <div class="image-caption">
-            <p><i>The Ten Biggest, No 7.</i><br>Hilma af Klint, 1907<br>Courtesy Tate<p>
-          </div>
-
-          <div class="image-container">
-            <img src="images/Hilma_af_Klint_-_1907_-_The_Ten_Biggest_-_No_2.jpg">
-          </div>
-          <div class="image-caption">
-            <p><i>The Ten Biggest, No 2,</i><br>Hilma af Klint, 1907<br>Courtesy Tate<br><p>
-          </div>
-
-          <div class="image-container">
-            <img src="images/Hilma_af_Klint_Svanen.jpg">
-          </div>
-          <div class="image-caption">
-            <p><i>Svanen, nr 17, grupp IX/SUW, serie SUW/UW</i><br>Hilma af Klint, 1915<br>Courtesy Stiftelsen Hilma af Klints Verk.<br>Photo: Albin Dahlström/ Moderna Museet.<p>
-          </div>
-
-          <div class="image-container">
-            <img src="images/Hilma_af_Klint_-_1907_-_The_Ten_Biggest_-_No_3.jpg">
-          </div>
-          <div class="image-caption">
-            <p><i>The Dove, No. 13</i><br>Hilma af Klint, 1915<br>Courtesy Stiftelsen Hilma af Klints Verk.<br>Photo: Albin Dahlström/ Moderna Museet.<p>
-          </div>
-
-          <div class="image-container">
-            <img src="images/1024px-Hilma_af_Klint_-_no_date_-_Untitled.jpg">
-          </div>
-          <div class="image-caption">
-            <p><i>Untitled</i><br>Undated<br>Courtesy Hamburger Bahnhof<br><p>
-          </div>
-        </div>
-
-        <div class="text-container">
-          <p>
-            Hilma af Klint was a Swedish artist and mystic whose paintings were, to the current art community, the first Western abstract art. A considerable body of her abstract work predates the first purely abstract compositions by Kandinsky. She belonged to a group called "The Five", a circle of women who shared her belief in the importance of trying to make contact with what she called the "High Masters"—often by way of séances. Her paintings, which sometimes resemble diagrams, were a visual representation of complex spiritual ideas.
-            <br><br><br>
-            <b>Early Life</b>
-            <br><br>
-            The fourth child of Captain Victor af Klint, a Swedish naval commander, and Mathilda af Klint (née Sonntag), Hilma af Klint spent summers with her family at their manor Hanmora on the island of Adelsö in Lake Mälaren. In these idyllic surroundings Hilma came into contact with nature at an early stage in her life; and this deep association with natural forms was to be an inspiration in her work. Later in life, Hilma af Klint came to live on a permanent basis at Munsö, an island next to Adelsö. <br><br> From her family, Hilma af Klint inherited a great interest for mathematics and botany. She showed an early ability in visual art, and after the family moved to Stockholm, she studied at Tekniska skolan in Stockholm (Konstfack today), where she learned portraiture and landscape painting. She was admitted at the Royal Academy of Fine Arts at the age of twenty. During the years 1882–1887 she studied mainly drawing, and portrait- and landscape painting. She graduated with honors, and was allocated a scholarship in the form of a studio in the so-called "Atelier Building" (Ateljébyggnaden), owned by The Academy of Fine Arts in the crossing between Hamngatan and Kungsträdgården in central Stockholm. This was the main cultural hub in the Swedish capital at that time. The same building also held Blanch's Café and Blanchs Art Gallery, where the conflict stood between the conventional art view of the Academy of Fine Arts, and the opposition movement of the "Art Society" (Konstnärsförbundet), inspired by the French En Plein Air painters. Hilma af Klint began working in Stockholm, gaining recognition for her landscapes, botanical drawings, and portraits. <br><br> Her conventional painting became the source of financial income. But her 'life's work' remained a quite separate practice.
-            <br><br><br>
-            <b>Spiritual and Philosophical Ideas</b>
-            <br><br>
-            In 1880 her younger sister Hermina died, and it was at this time that the spiritual dimension of her life began to develop. Her interest in abstraction and symbolism came from Hilma af Klint's involvement in spiritism, very much in vogue at the end of the 19th and beginning of the 20th century. Hilma's first experiments in spiritual investigation began in 1879. Hilma af Klint became interested in the Theosophy of Madame Blavatsky and the philosophy of Christian Rosencreutz. In 1908 she met Rudolf Steiner, the founder of the Anthroposophical Society, who was on a visit to Stockholm. Steiner initiated her in his own theories regarding the Arts, and would have a certain influence on her paintings later in life. Several years later, in 1920, she met him again at the Goetheanum in Dornach, Switzerland, the headquarters of the Anthroposophical Society. Between 1921 and 1930 she spent long periods at the Goetheanum.
-            <br><br>
-            Af Klint's work can be understood in the wider context of the Modernist search for new forms in artistic, spiritual, political and scientific systems at the beginning of the 20th century. One will find the same interest in spirituality in other artists during this same period, such as Wassily Kandinsky, Piet Mondrian, Kasimir Malevitch and the French Nabis of which many were, like af Klint, inspired by the Theosophical Movement. However, the artistic transition to abstract art and the nonfigurative painting of Hilma af Klint would occur without any contacts with the contemporary modern movements.
-            <br><br>
-            The works of Hilma af Klint are mainly spiritual, and her artistic work is a consequence of this.
-            <br><br><br>
-            <b>Work</b>
-            <br><br>
-            At the Academy of Fine Arts she met Anna Cassel, the first of the four women with whom she later worked in "The Five" (Der Fem), a group of artists who shared her ideas, Cassel, Cornelia Cederberg, Sigrid Hedman, and Mathilda Nilsson. ''The Five'' began their association as members of the Edelweiss Society, which embraced a combination of the Theosophical teachings of Helena Blavatsky and spiritualism. The group of female artists The Five was engaged in the paranormal and regularly organized spiritistic séances. They opened each meeting with a prayer, followed by a meditation, a Christian sermon, and a review and analysis of a text from the New Testament. All of this would then be followed by a séance. They recorded in a book a completely new system of mystical thoughts in the form of messages from higher spirits, called The High Masters ("Höga Mästare"). One, Gregor, spoke thus: "All the knowledge that is not of the senses, not of the intellect, not of the heart but is the property that exclusively belongs to the deepest aspect of your being...the knowledge of your spirit".
-            <br><br>
-            Through her work with the group The Five Hilma af Klint created experimental automatic drawing as early as 1896, leading her towards an inventive geometric visual language capable of conceptualizing invisible forces both of the inner and outer worlds. She explored world religions, atoms, and the plant world and wrote extensively about her discoveries. As she got more familiar with this form of expression, Hilma af Klint was assigned by the High Masters to create the paintings for the "Temple" – however she never understood what this "Temple" referred to. Hilma af Klint felt she was being directed by a force that would literally guide her hand. She wrote in her notebook:
-            <br><br>
-            <i>The pictures were painted directly through me, without any preliminary drawings, and with great force. I had no idea what the paintings were supposed to depict; nevertheless I worked swiftly and surely, without changing a single brush stroke.</i>
-            <br><br>
-            In 1906, after 20 years of artistic works, and at the age of 44, Hilma af Klint painted her first series of abstract paintings.
-            <br><br>
-            The work for the Temple ran between 1906 and 1915, carried out in two phases with an interruption between 1908 and 1912. As Hilma af Klint discovered her new form of visual expression, she developed a new artistic language. Her painting became more autonomous and more intentional. The spiritual would however continue being the main source of creativity throughout the rest of her life.
-
-            The collection for the Temple counts in total 193 paintings, grouped in several sub-series. The major paintings, dated 1907, are extremely large in size: each painting measures approximately 240 x 320 cm. This series, called The Ten Largest, describes the different phases in life, from early childhood to old age.
-
-            Quite apart from their diagrammatic purpose the paintings have a freshness and a modern aesthetic of tentative line and hastily captured image: a segmented circle, a helix bisected and divided into a spectrum of lightly painted colours. The artistic world of Hilma af Klint is impregnated with symbols, letters and words. The paintings often depict symmetrical dualities, or reciprocities: up and down, in and out, earthly and esoteric, male and female, good and evil. The colour choice is throughout metaphorical: blue stands for the female spirit, yellow for the male one, and pink / red for physical / spiritual love. The Swan and the Dove, names of two series of the Paintings for the Temple, are also symbolic, representing respectively transcendence and love. As gates to other dimensions, her paintings call for interpretation on a narrative, esoteric and artistic level while evoking primordial geometry and humanistic motifs.
-
-            When Hilma af Klint had completed the works for the Temple, the spiritual guidance ended. However, she pursued abstract painting, now independently from any external influence. If the paintings for the Temple were mostly oil paintings, she now also used watercolours. Her later paintings are significantly smaller in size. She painted among others a series depicting the stand-points of different religions at various stages in history, as well as representations of the duality between the physical being and its equivalence on an esoteric level. As Hilma af Klint pursued her artistic and esoteric research, it is possible to perceive a certain inspiration from the artistic theories developed by the Anthroposophical Society from 1920 onward.
-
-            All through her life, Hilma af Klint would seek to understand the mysteries that she had come in contact with through her work. She produced more than 150 notebooks with her thoughts and studies.
-
-            Hilma af Klint never dared to show her abstract work to her contemporaries. Her major work, the one dedicated to the Temple, had been questioned and rejected by Rudolf Steiner. Hilma af Klint drew the conclusion that her time was not yet ready to understand them. More than 1200 paintings and drawings were carefully stored away in her atelier, waiting for the future.
-
-            Hilma af Klint died in Djursholm, Sweden in 1944, nearly 82 years old, in the aftermath of a traffic accident, having only exhibited her works a handful of times, mainly at spiritual conferences and gatherings.
-            <br><br><br>
-            <b>Legacy</b>
-            <br><br>
-            In her will, Hilma af Klint left all her abstract paintings to her nephew, vice-admiral Erik af Klint of the Royal Swedish Navy. She specified that her work should be kept secret for at least 20 years after her death. When the boxes were opened at the end of the 1960s, very few persons had knowledge of what would be revealed.
-            <br><br>
-            In 1970 her paintings were offered as a gift to Moderna Museet in Stockholm, which declined the donation. Thanks to the art historian Åke Fant, her art was introduced to an international audience in the 1980s, when he presented her at a Nordik conference in Helsinki in 1984. Erik af Klint then donated thousands of drawings and paintings to a foundation bearing the artist's name in the 1970s.
-            <br><br>
-            The collection of abstract paintings of Hilma af Klint counts more than 1200 pieces. It is owned and managed by the Hilma af Klint Foundation in Stockholm, Sweden. In 2017, Norwegian architectural firm Snøhetta presented plans for an exhibition centre dedicated to af Klint in Järna, south of Stockholm, with estimated building costs of between €6 million and €7.5 million. In February 2018, the Foundation signed a long-term agreement of cooperation with the Moderna Museet, thereby confirming the perennity of the Hilma af Klint Room, i.e. a dedicated space at the museum where a dozen works of the artist are shown on a continuous basis.
-            </p>
-        </div>
+      <div id="project-heading-container">
+        <span id="project-heading-project"><span class="material-icons md-12">subdirectory_arrow_right</span><small>PROJECT</small></span>
+        <span id="project-heading-scope"><span class="material-icons md-12">subdirectory_arrow_right</span><small>SCOPE</small></span>
+        <span id="project-heading-year"><span class="material-icons md-12">subdirectory_arrow_right</span><small>YEAR</small></span>
+        <span id="project-heading-preview"><span class="material-icons md-12">subdirectory_arrow_right</span><small>PREVIEW</small></span>
       </div>
     </div>
-    <div id="light-switch"></div>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>TEAM</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img id="project-link-preview-team" src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+    <div class="project-hover-image" id="project-hover-image-team"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>ANOTHER—WORLDLY ENERGIES</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>IAVI</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>DIY HOMUNCULI</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>CATALYST</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>DIVERGENT DESIGN</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>BLACK BOX</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>VAPORWARE</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link">
+      <span class="project-link-project"><p>ALTERNATIVE IOT</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
+    <a class="project-link" style="">
+      <span class="project-link-project"><p>SHRINE</p></span>
+      <span class="project-link-scope"><p>User Experience</p></span>
+      <span class="project-link-year"><p>2020</p></span>
+      <div class="project-link-preview"><img src="images/GettyImages-581747159_reduceed.jpg"></div>
+    </a>
+
   </body>
   <footer class="">
-      <div id="footer-nav">
-        <div><p><b><a href="index.html" style="color: white;">Primordial Chaos</a></b></p></div>
-        <div id="footer-links"><p><a>Artists</a><a>Mediums</a><a>Movements</a><a>Info</a></p></div>
+    <h1>Available for full-time opportunities in digital product, user experience, and design research beginning September 2020.</h1>
+    <div id="footer-links">
+      <div id="footer-links-left">
+        <a class="nav-links">EMAIL</a>
+        <a class="nav-links">LINKEDIN</a>
+        <a class="nav-links">ARE.NA</a>
+        <a class="nav-links">INSTAGRAM</a>
+        <a class="nav-links">RESUME</a>
       </div>
+      <div id="footer-links-right">
+        <a class="nav-links" id="light-switch">DARK</a>
+        <a class="nav-links">TOP</a>
+      </div>
+    </div>
+    <div id="stats-container">
+      <p>© Ioan Butiu 2020</p>
+      <span class="material-icons md-16">sentiment_satisfied_alt</span>
+    </div>
   </footer>
 </html>
