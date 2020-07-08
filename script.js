@@ -4,7 +4,7 @@ var projectsHidden = true;
 
 $(document).ready(function(){
 
-  $("#filter-links-view").css("display", "none");
+  /*$("#filter-links-view").css("display", "none");
   $("#filter-links-projects").css("display", "none");
 
 
@@ -15,7 +15,7 @@ $(document).ready(function(){
       viewHidden = false;
     } else {
       $("#filter-links-view").css("display", "none");
-      $("#view-button").css("margin-left", "0.5rem");
+      $("#view-button").css("margin-left", "0.75rem");
       viewHidden = true;
     }
   });
@@ -27,10 +27,10 @@ $(document).ready(function(){
       projectsHidden = false;
     } else {
       $("#filter-links-projects").css("display", "none");
-      $("#projects-button").css("margin-left", "0.5rem");
+      $("#projects-button").css("margin-left", "0.75rem");
       projectsHidden = true;
     }
-  });
+  });*/
 
   $("#project-link-preview-team").hover(function() {
     $("#project-hover-image-team").css("display", "block");
