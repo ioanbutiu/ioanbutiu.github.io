@@ -56,6 +56,7 @@ a {
 }
 
 .nav-links {
+  display: inline-block;
   border: 1px solid black;
   padding: .25rem 1.5rem;
 }
@@ -171,7 +172,7 @@ a {
 
 .project-link {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   padding: 1.5rem 0rem;
@@ -251,4 +252,36 @@ a {
 .project-hover-image img{
   max-height: 100%;
   object-fit: contain;
+}
+
+#mobile-menu-button {
+  display: none;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px) {
+
+body {padding: 0rem 2rem;}
+
+p {font-size: 2rem;}
+
+#nav-bar {padding: 3rem 0rem;}
+
+#nav-bar-links {display: none;}
+
+#mobile-menu-button {display: block;}
+
+#project-list-heading-container {position: static;}
+
+.project-link-project {width: 75%;}
+
+.project-link-scope {display: none;}
+
+.project-link-year {width: 25%; text-align: right;}
+
+.project-link-preview {width: 100%; padding: 2rem 0rem;}
+
+.project-link-preview img {max-width: 100%; max-height: 100%;}
+
 }
