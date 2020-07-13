@@ -258,6 +258,29 @@ a {
   display: none;
 }
 
+#mobile-nav {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 0rem 2rem;
+  display: none;
+  padding-top: 10rem;
+}
+
+#mobile-nav .nav-links {
+  display: inline-block;
+  margin: 2rem 0rem 0rem 1rem;
+  padding: 1.5rem 3rem;
+
+}
+
+#mobile-nav .nav-links p {
+  font-size: 4rem;
+}
+
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px) {

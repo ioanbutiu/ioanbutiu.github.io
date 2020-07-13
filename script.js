@@ -32,6 +32,20 @@ $(document).ready(function(){
     }
   });*/
 
+var menuHidden = true;
+
+  $("#mobile-menu-button").on("click", function(){
+    if (menuHidden) {
+    $("#mobile-nav").show();
+    menuHidden = false;
+    $("#mobile-menu-button").html("<p>CLOSE</p>");
+  } else {
+    $("#mobile-nav").hide();
+    menuHidden = true;
+    $("#mobile-menu-button").html("<p>MENU</p>");
+  }
+  });
+
   $("#project-link-preview-team").hover(function() {
     $("#project-hover-image-team").css("display", "block");
   }, function() {
